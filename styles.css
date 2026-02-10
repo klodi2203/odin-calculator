@@ -21,8 +21,6 @@ body {
     font-weight: 600;
 }
 
-
-
 .calc-container {
     height: 450px;
     width: 350px;
@@ -41,12 +39,20 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    word-break: break-all;
+    font-size: 2rem;
+    padding-right: 1rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .buttons-calc {
     flex: 4;
     display: flex;
 
+}
+
+button {
+    cursor: pointer;
 }
 
 .left {
@@ -62,27 +68,36 @@ body {
     flex: 1;
 }
 
+.left .erase-ac {
+    flex:1;
+}
+.left .nums {
+    display: flex;
+    flex-direction: column;
+    flex:4
+}
+
 .left div button {
     flex: 1;
 }
 
-.first .clear {
+.erase-ac .clear {
     background-color: #FF9F1C;
     color: #2B324F;
     font-size: 1.8rem;
 }
 
-.first .clear:hover {
+.erase-ac .clear:hover {
     background-color: #E8890B;
 }
 
-.first .erase {
+.erase-ac .erase {
     background-color: #FFD166;
     font-size: 1.8rem;
     color: #2B324F;
 }
 
-.first .erase:hover {
+.erase-ac .erase:hover {
     background-color: #F4C430;
 
 }
